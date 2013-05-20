@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 100%;
+    padding: 0 0.625em;
+    overflow-y: scroll;
+}
+@media (max-width: 30em), (max-device-width: 30em) { /* 480px */
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 18.750em), (max-device-width: 18.750em) { /* 300px */
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 15.625em), only screen and (max-device-width: 15.625em) { /* 250px */
+  html {
+    font-size: 50%;
+  }
+}
+#inputWrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#input {
+    float: left;
+}
+label, input, p {
+    font-family: Consolas, 'Courier New', Monaco, 'DejaVu Sans Mono';
+    font-size: 1.2em;
+}
+label {
+    display: block;
+    padding-bottom: .5em;
+}
+#number {
+    width: 100%;
+}
+p {
+    margin-top: .5em;
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fibonacci Sequence Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="inputWrap">
+        <div id="input">
+            <label for="number">How many numbers of Fibonacci Sequence do you want to see?</label>
+            <input id="number" type="number" data-bind="value: numberOfNumbersToOutput, valueUpdate: 'afterkeydown'" min="0">
+        </div>
+    </div>
+    <p data-bind="text: fibonacciSequence"></p>
+
+<script src="js/json2.js"></script>
+<script src="js/knockout-2.2.1.js"></script>
+<script src="js/knockout.persist.js"></script>
+<script src="js/biginteger.js"></script>
+<script src="js/eventUtility.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
