@@ -11,7 +11,7 @@
     <div id="inputWrap">
         <div id="input">
             <label for="number">How many numbers of Fibonacci Sequence do you want to see?</label>
-            <input id="number" type="number" data-bind="value: numberOfNumbersToOutput, valueUpdate: 'afterkeydown'" min="0">
+            <input id="number" type="number" data-bind="value: numberOfNumbersToOutput, valueUpdate: 'keyup'" min="0">
         </div>
     </div>
     <p data-bind="text: fibonacciSequence"></p>
