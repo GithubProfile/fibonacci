@@ -4,7 +4,7 @@
 (function(){
   var FibonacciViewModel = function() {
       var self = this;
-      self.numberOfNumbersToOutput = ko.observable('').extend({ persist: 'numberOfNumbersToOutput' });
+      self.numberOfNumbersToOutput = ko.observable('');
       self.fibonacciSequence = ko.computed(function() {
             var fibonacciArray = [];
             for(var i = 0; i <= self.numberOfNumbersToOutput() - 1; i++) {
