@@ -1,5 +1,5 @@
 /* Fibonacci Sequence Generator v1.0
-   Author: Denis Petyukov <denis.petyukov@gmail.com>
+   Author: Denys Petiukov <denys.petiukov@gmail.com>
 */
 (function(){
   var FibonacciViewModel = function() {
