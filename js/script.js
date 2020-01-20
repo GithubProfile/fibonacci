@@ -25,12 +25,27 @@
   // focus on input
   document.getElementById('number').focus();
 
+  var addEvent = function(selector, type, fn) {
+    if (typeof window.addEventListener !== 'undefined') {
+      selector.addEventListener(type, fn);
+    } else {
+      selector.attachEvent('on' + type, fn);
+    }
+  }
+
   var numberInput = document.getElementById('number');
-  eventUtility.addEvent(numberInput, 'keydown', function(evt){
-    var code = evt.keyCode;
+  
+  addEvent(numberInput, 'keydown', function(e) {
+    var code = e.keyCode;
     // allow only number input
-    if ( (code >= 65 && code <= 90) || (code >= 106 && code <= 122) || (code >= 186 && code <= 192) || (code >= 219 && code <= 222) ) {
-      eventUtility.preventDefault(evt);
+    if ( 
+      (code >= 65 && code <= 90) 
+      || (code >= 106 && code <= 122) 
+      || (code >= 186 && code <= 192) 
+      || (code >= 219 && code <= 222) 
+    ) {
+      typeof e.preventDefault !== 'undefined' ? e.preventDefault() : e.returnValue = false;
     }
   });
+
 }());
