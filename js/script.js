@@ -1,6 +1,4 @@
-/* Fibonacci Sequence Generator v1.0
-   Author: Denys Petiukov <denys.petiukov@gmail.com>
-*/
+/*! Copyright (c) 2013 Denys Petiukov. License: MIT. */
 (function(){
   var FibonacciViewModel = function() {
       var self = this;
